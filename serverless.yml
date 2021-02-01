@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: sasi.devops.photos
+service: sasi-devops-photos
 
 package:
   individually: true
