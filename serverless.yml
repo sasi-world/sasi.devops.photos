@@ -22,7 +22,7 @@ custom:
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: dev
+  stage: ${self:provider.environment.stage}
   region: eu-west-1
   profile: personalAccount
   # To load environment variables externally
@@ -33,7 +33,7 @@ provider:
   #environment: ${file(env.yml):${self:provider.stage}}
 
   environment:
-    stage: ${self:custom.stage}
+    stage: ${env:stage}
     region: ${self:provider.region}
 
 functions:
