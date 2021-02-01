@@ -1,6 +1,9 @@
 # NOTE: update this with your service name
 service: sasi.devops.photos
 
+package:
+  individually: true
+
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
   - serverless-bundle
@@ -19,7 +22,7 @@ custom:
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: ${env:stage}
+  stage: dev
   region: eu-west-1
   profile: personalAccount
   # To load environment variables externally
@@ -31,7 +34,7 @@ provider:
 
   environment:
     stage: ${self:custom.stage}
-    region: ${env:REGION}
+    region: ${self:provider.region}
 
 functions:
   graphql:

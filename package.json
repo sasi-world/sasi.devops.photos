@@ -4,7 +4,7 @@
   "description": "A GraphQL Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
   "scripts": {
-    "offline": " sls offline ",
+    "offline": "serverless offline start",
     "watch": "tsc -w",
     "deploy": "sls deploy",
     "test": "jest"
@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "apollo-server-lambda": "^2.16.0",
-    "aws-sdk": "2.694.0",
     "graphql": "^14.5.8"
   }
 }
