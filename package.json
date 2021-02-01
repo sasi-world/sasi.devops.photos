@@ -19,6 +19,8 @@
     "url": "https://github.com/pimp-my-book/serverless-graphql-nodejs-starter"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.64",
+    "@types/jest": "^26.0.14",
     "serverless-bundle": "3.2.1",
     "serverless-domain-manager": "^4.2.0",
     "serverless-dotenv-plugin": "^2.1.1",
