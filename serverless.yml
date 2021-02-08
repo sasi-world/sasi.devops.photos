@@ -79,4 +79,4 @@ functions:
           integration: lambda-proxy
 
 resources:
-  - ${file(resources/purchases-table.yml)}
+  - ${file(resources/photos-table.yml)}
