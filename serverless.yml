@@ -35,6 +35,25 @@ provider:
   environment:
     stage: ${env:stage}
     region: ${self:provider.region}
+    PhotosDB: ${self:custom.PhotosDB}
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - dynamodb:GetRecords
+        - dynamodb:GetShardIterator
+        - dynamodb:DescribeStream
+        - dynamodb:ListStream
+
+      Resource:
+        - "Fn::GetAtt": [PhotosDB, Arn]
 
 functions:
   graphql:
