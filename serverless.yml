@@ -14,6 +14,11 @@ plugins:
 # Enable auto-packing of external modules
 custom:
   stage: ${opt:stage, self:provider.stage}
+  PhotosDB: ${self:custom.stage}-sasi-photos
+  tableThroughputs:
+    prod: 1
+    default: 1
+  tableThroughput: ${self:custom.tableThroughputs.${self:custom.stage}, self:custom.tableThroughputs.default}
   serverless-offline:
     port: 4000
   bundle:
@@ -35,6 +40,25 @@ provider:
   environment:
     stage: ${env:stage}
     region: ${self:provider.region}
+    PhotosDB: ${self:custom.PhotosDB}
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - dynamodb:GetRecords
+        - dynamodb:GetShardIterator
+        - dynamodb:DescribeStream
+        - dynamodb:ListStream
+
+      Resource:
+        - "Fn::GetAtt": [PhotosDB, Arn]
 
 functions:
   graphql:
@@ -53,3 +77,6 @@ functions:
           method: get
           cors: true
           integration: lambda-proxy
+
+resources:
+  - ${file(resources/photos-table.yml)}
