@@ -16,6 +16,9 @@ A hello world Query
 """
 type Query {
      hello: String!
+     getAllPhotos:[Photo]
+     getAPhoto(ID:String!):Photo
+     getPhotosByContributor(contributorID:String!): [Photo]
 }
 
 `;
