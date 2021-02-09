@@ -80,3 +80,4 @@ functions:
 
 resources:
   - ${file(resources/photos-table.yml)}
+  - ${file(resources/photos-bucket.yml)}
