@@ -1,0 +1,122 @@
+[
+  {
+    "ID": "b8ce0520-9546-4738-9a54-91f8a91c6f28",
+    "contributorID": "ab9354c2-5b15-4b03-a5fe-09e37a4aca27",
+    "contributorUsername": "@toussaint_louverture",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/ab9354c2-5b15-4b03-a5fe-09e37a4aca27/Mask+Group-1.png",
+    "fileSize": "115.0 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "f5477654-bfd3-4c66-bcea-4e08982de69c",
+    "contributorID": "ab9354c2-5b15-4b03-a5fe-09e37a4aca27",
+    "contributorUsername": "@toussaint_louverture",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/ab9354c2-5b15-4b03-a5fe-09e37a4aca27/Mask+Group-2.png",
+    "fileSize": "244.1 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "2db9f4c4-7018-447e-9507-203faf291e84",
+    "contributorID": "ab9354c2-5b15-4b03-a5fe-09e37a4aca27",
+    "contributorUsername": "@toussaint_louverture",
+    "createdAt": "String",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/ab9354c2-5b15-4b03-a5fe-09e37a4aca27/Mask+Group-3.png",
+    "fileSize": "167.0 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "f2eca81b-d448-43d3-9dce-e2c83f34df3c",
+    "contributorID": "ab9354c2-5b15-4b03-a5fe-09e37a4aca27",
+    "contributorUsername": "@toussaint_louverture",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/ab9354c2-5b15-4b03-a5fe-09e37a4aca27/Mask+Group-4.png",
+    "fileSize": "120.3 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "8ca61a4f-f3a1-4da3-b8cf-99ea900b8709",
+    "contributorID": "ab9354c2-5b15-4b03-a5fe-09e37a4aca27",
+    "contributorUsername": "@toussaint_louverture",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/ab9354c2-5b15-4b03-a5fe-09e37a4aca27/Mask+Group-5.png",
+    "fileSize": "120.3 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "b631a569-67bb-459d-8888-4b02fb6f09c8",
+    "contributorID": "ab9354c2-5b15-4b03-a5fe-09e37a4aca27",
+    "contributorUsername": "@toussaint_louverture",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/ab9354c2-5b15-4b03-a5fe-09e37a4aca27/Mask+Group-6.png",
+    "fileSize": "120.3 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "57a5aa00-92ce-4991-aa2b-447eb96e5180",
+    "contributorID": "b4c3a4f2-3464-4ed1-9325-18d7c0fe258e",
+    "contributorUsername": "@jean_basquiat",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/b4c3a4f2-3464-4ed1-9325-18d7c0fe258e/Mask+Group-7.png",
+    "fileSize": "115.0 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "93586430-cb3b-45c5-b567-addbc741986c",
+    "contributorID": "b4c3a4f2-3464-4ed1-9325-18d7c0fe258e",
+    "contributorUsername": "@jean_basquiat",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/b4c3a4f2-3464-4ed1-9325-18d7c0fe258e/Mask+Group-8.png",
+    "fileSize": "244.1 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "c51d6ec0-2615-49c5-b0a6-e6cfa691bfb8",
+    "contributorID": "b4c3a4f2-3464-4ed1-9325-18d7c0fe258e",
+    "contributorUsername": "@jean_basquiat",
+    "createdAt": "String",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/b4c3a4f2-3464-4ed1-9325-18d7c0fe258e/Mask+Group-10.png",
+    "fileSize": "167.0 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "efdb3382-723a-49f1-b703-d3454acaf10c",
+    "contributorID": "b4c3a4f2-3464-4ed1-9325-18d7c0fe258e",
+    "contributorUsername": "@jean_basquiat",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/b4c3a4f2-3464-4ed1-9325-18d7c0fe258e/Mask+Group-11.png",
+    "fileSize": "120.3 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "7b16b969-414b-4f17-81b4-72637b267ccb",
+    "contributorID": "b4c3a4f2-3464-4ed1-9325-18d7c0fe258e",
+    "contributorUsername": "@jean_basquiat",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/b4c3a4f2-3464-4ed1-9325-18d7c0fe258e/Mask+Group.png",
+    "fileSize": "120.3 KB",
+    "dimensions": "30x30"
+  },
+  {
+    "ID": "2ef15087-6936-4b32-917f-ab6d703c9e54",
+    "contributorID": "b4c3a4f2-3464-4ed1-9325-18d7c0fe258e",
+    "contributorUsername": "@jean_basquiat",
+    "createdAt": "2021-02-11T20:03:04.729Z",
+    "updatedAt": null,
+    "s3URL": "https://sasi-photos-dev.s3-eu-west-1.amazonaws.com/b4c3a4f2-3464-4ed1-9325-18d7c0fe258e/Mask+Group-9.png",
+    "fileSize": "120.3 KB",
+    "dimensions": "30x30"
+  }
+]
