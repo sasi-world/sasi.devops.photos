@@ -4,43 +4,33 @@ this function will allow us to add all the listings into Dynamo dynamically
 
 //set up the aws-sdk
 const AWS = require("aws-sdk");
-AWS.config.update({ region: "us-east-1" });
+AWS.config.update({ region: "eu-west-1" });
 const docClient = new AWS.DynamoDB.DocumentClient();
 
 //import the listings json
 const photos = require("./photos.json");
-console.log("Listings.Init", listings);
+console.log("photos.Init", photos);
 
 //lets inseert them into the table
-//loop over the listings
-listings.map((l) => {
+//loop over the photos
+photos.map((l) => {
   //create params object
-  listingParams = {
-    TableName: "dev-lunar-listings",
+  photosParams = {
+    TableName: "dev-sasi-photos",
     Item: {
-      coverPhoto: l.coverPhoto,
-      guide: {
-        avatar: l.guide.avatar,
-        bio: l.guide.bio,
-        name: l.guide.name,
-      },
-      listingActivities: l.listingActivities,
-      listingDescription: l.listingDescription,
-      listingId: l.listingId,
-      listingLocation: l.listingLocation,
-      listingName: l.listingName,
-      listingType: l.listingType,
-      numberOfDays: l.numberOfDays,
-      price: l.price,
-      rating: l.rating,
-      specialAmount: l.specialAmount,
-      specialType: l.specialType,
+      ID: l.ID,
+      contributorID: l.contributorID,
+      contributorUsername: l.contributorUsername,
+      createdAt: l.createdAt,
+      s3URL: l.s3URL,
+      fileSize: l.fileSize,
+      dimensions: l.dimensions,
     },
   };
 
   //put the data into the table
 
-  docClient.put(listingParams, function (err, data) {
+  docClient.put(photosParams, function (err, data) {
     if (err) {
       console.error(
         "Unable to add listing",
