@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const AWS = require("aws-sdk");
 AWS.config.update({
   region: "eu-west-1",
@@ -6,15 +8,23 @@ AWS.config.update({
 });
 
 const s3 = new AWS.S3();
-const log = console.log();
-const getURLS = async () => {
+const log = console.log;
+
+const getURLS = () => {
+  const user1 = "b4c3a4f2-3464-4ed1-9325-18d7c0fe258e";
+  const user2 = "ab9354c2-5b15-4b03-a5fe-09e37a4aca27";
   const params = {
     Bucket: "sasi-photos-dev",
   };
 
-  const photos = await s3.listObjects(params);
-
-  log("photos", photos);
+  s3.listObjects(params, (data, err) => {
+    if (data) {
+      log("data", data);
+    }
+    if (err) {
+      log("err", err);
+    }
+  });
 };
 
 getURLS();
