@@ -1,16 +1,11 @@
-<<<<<<< HEAD
-=======
 require("dotenv").config();
 
->>>>>>> e38dcd1a1e12618ff5e5456fd971cfd505384a62
 const AWS = require("aws-sdk");
 AWS.config.update({
   region: "eu-west-1",
   accessKeyId: process.env.ACCESS_KEY,
   secretAccessKey: process.env.SECERT_KEY,
 });
-<<<<<<< HEAD
-=======
 
 const s3 = new AWS.S3();
 const log = console.log;
@@ -33,4 +28,3 @@ const getURLS = () => {
 };
 
 getURLS();
->>>>>>> e38dcd1a1e12618ff5e5456fd971cfd505384a62
