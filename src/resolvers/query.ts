@@ -20,16 +20,11 @@ export const getAPhoto = async (args: any, context: any) => {
   try {
     const params: object = {
       TableName: process.env.PhotosDB,
-      Key: {
-        ID: args.ID,
-        contributorID: args.contributorID,
-      },
     };
 
-    console.log(params);
-    const photo = await dynamoDB.default.get(params);
-
-    return photo.Item;
+    const photos = await dynamoDB.default.scan(params);
+    const photo = photos.Items.filter((item) => item.ID === args.ID);
+    return photo[0];
   } catch (e) {
     throw new Error(e);
   }
