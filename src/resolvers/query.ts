@@ -22,6 +22,7 @@ export const getAPhoto = async (args: any, context: any) => {
       TableName: process.env.PhotosDB,
       Key: {
         ID: args.ID,
+        contributorID: args.contributorID,
       },
     };
 
