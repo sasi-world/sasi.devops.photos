@@ -15,3 +15,17 @@ export const getAllPhotos = async (args: any, contetxt: any) => {
     throw new Error(e);
   }
 };
+
+export const getAPhoto = async (args: any, context: any) => {
+  try {
+    const params: object = {
+      TableName: process.env.PhotosDB,
+    };
+
+    const photos = await dynamoDB.default.scan(params);
+    const photo = photos.Items.filter((item) => item.ID === args.ID);
+    return photo[0];
+  } catch (e) {
+    throw new Error(e);
+  }
+};
