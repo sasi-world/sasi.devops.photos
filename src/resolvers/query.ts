@@ -18,7 +18,7 @@ export const getAllPhotos = async (args: any, contetxt: any) => {
 
 export const getAPhoto = async (args: any, context: any) => {
   try {
-    const params = {
+    const params: object = {
       TableName: process.env.Photos,
       Key: {
         ID: args.ID,
