@@ -19,12 +19,13 @@ export const getAllPhotos = async (args: any, contetxt: any) => {
 export const getAPhoto = async (args: any, context: any) => {
   try {
     const params: object = {
-      TableName: process.env.Photos,
+      TableName: process.env.PhotosDB,
       Key: {
         ID: args.ID,
       },
     };
 
+    console.log(params);
     const photo = await dynamoDB.default.get(params);
 
     return photo.Item;
