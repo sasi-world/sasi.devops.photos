@@ -15,3 +15,7 @@ export const getAllPhotos = async (args: any, contetxt: any) => {
     throw new Error(e);
   }
 };
+
+export const getAPhoto = async (args: any, context: any) => {
+  return null;
+};
