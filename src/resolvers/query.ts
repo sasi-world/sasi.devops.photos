@@ -17,5 +17,15 @@ export const getAllPhotos = async (args: any, contetxt: any) => {
 };
 
 export const getAPhoto = async (args: any, context: any) => {
-  return null;
+  try {
+    const params = {
+      ID: args.ID,
+    };
+
+    const photo = await dynamoDB.default.get(params);
+
+    return photo.Item;
+  } catch (e) {
+    throw new Error(e);
+  }
 };
